@@ -30,8 +30,10 @@ public class DailyDate {
 		return date;
 	}
 
-	public long getTime() {
-		return date.getTime();
+	public byte[] getBytes() {
+		String time = String.valueOf(date.getTime());
+		return time.getBytes();
 	}
+
 }
 
